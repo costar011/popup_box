@@ -88,3 +88,51 @@ body {
 label:hover{
     box-shadow: 0px 0px 30px #788daa83;
 }
+
+.box {
+    width: 350px;
+    height: 250px;
+    background: #2C394B;
+    color: #fff;
+
+    border-radius: 10px;
+    position: absolute;
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    transition: all .4s;
+}
+
+.btn:checked  ~ .box{
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+}
+
+.box p {
+    font-size: 1.5em;
+}
+
+.box label {
+    width: 120px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #fff;
+    color: #000;
+    margin-top: 1em;
+    border-radius: 10px;
+
+    cursor: pointer;
+    box-shadow: 0px 6px #556b88;
+    transition: all .4s;
+}
+
+label:hover {
+    box-shadow: 0px 0px 30px #788daa83;
+}
