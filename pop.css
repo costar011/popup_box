@@ -13,3 +13,12 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+.btn {
+    width: 120px;
+    height: 40px;
+
+    position: relative;
+    cursor: pointer;
+    appearance: none;
+}
